@@ -1,0 +1,110 @@
+*{
+    padding: 0;
+    margin: 5px;
+}
+
+.header{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 80px;
+    background: rgb(182, 208, 241);
+    align-items: center;
+}
+body{
+    font-family: "Roboto";
+    background-color: #F2F9FF;
+    
+}
+.menu{
+    list-style: none;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 20px;
+    font-weight: bold;
+}
+
+.menu a{
+    color: rgb(61, 61, 216);
+    margin-left: 50px;
+    text-decoration: none;
+    font-size: 18px;
+}
+.menu a:hover{
+    color: #ff0000;
+}
+.atendimento {
+    background-color: #3751ff;
+    font-size: 18px;
+    width: 135px;
+    font-weight: bold;
+    border-radius: 10px;
+    border-style: none;
+    color: #fff;   
+    padding: 5px;
+    cursor: pointer;
+}
+.titulodapagina{
+    color:#1E266D;
+    font-size: 56px;
+    font-weight: bold;
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+}
+h2{
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    margin-top: 20px;
+    color: #455880;
+}
+.button2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    gap: 40px;
+    border-radius:10px ;
+
+}
+
+.buttonBuy{
+    border-radius: 10px;
+    border-style: none;
+    background-color: #3751ff;
+    font-weight: bold;
+    color: #fff;
+    padding: 5px;
+    width: 100px;
+    box-shadow: none;
+}
+.buttonBuy:hover{
+    background-color: #4caf50;
+    color: #fff;
+}
+.buttonSee{
+    border-radius: 10px;
+    border-style: none;
+    background-color: #3751ff;
+    font-weight: bold;
+    color: #fff;
+    padding: 5px;
+    width: 120px;
+    box-shadow: none;
+}
+.buttonSee:hover{
+    background-color: #4caf50;
+    color: #fff;
+}
+
+.imageBanner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+

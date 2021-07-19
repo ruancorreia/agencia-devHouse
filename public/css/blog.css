@@ -1,0 +1,79 @@
+*{
+    padding: 0;
+    margin: 5px;
+}
+.header{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 80px;
+    background: rgb(182, 208, 241);
+    align-items: center;
+    font-family: "Roboto";
+}
+body{
+    font-family: "Arial";
+    background-color: #F2F9FF;
+    
+}
+.menu{
+    list-style: none;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 20px;
+    font-weight: bold;
+}
+.menu a{
+    color: rgb(61, 61, 216);
+    margin-left: 50px;
+    text-decoration: none;
+    font-size: 18px;
+}
+.atendimento {
+    background-color: #3751ff;
+    font-size: 18px;
+    width: 135px;
+    font-weight: bold;
+    border-radius: 10px;
+    border-style: none;
+    color: #fff;   
+    padding: 5px;
+    cursor: pointer;
+}
+h1{
+    color: rgb(0, 0, 0);
+    font-family: "Roboto"
+}
+.example{
+    width: 50px;
+    height: 60px;
+    list-style: none;
+}
+
+.icon-social{
+    width: 45px;
+    display: inline;
+    list-style: none;
+}
+.image-center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header{
+    background: rgb(255, 255, 255);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px; 
+    color:white; 
+}
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    background: rgb(53, 6, 6);
+    justify-content: space-around;
+}

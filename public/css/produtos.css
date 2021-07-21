@@ -100,7 +100,6 @@ p{
     margin-left: 70px;
     margin-bottom: 650px;
 }
-
 .centralPage{
     display: flex;
     flex-wrap: nowrap;
@@ -110,6 +109,16 @@ p{
 }
 @media (max-width: 300px){
     banner-2{
+        display: none;
+    }
+}
+@media (max-width: 800px){
+    .banner2  {
+        display: block;
+    }
+}
+@media (max-width: 300px){
+    .banner2 {
         display: none;
     }
 }

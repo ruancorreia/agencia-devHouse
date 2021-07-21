@@ -107,4 +107,14 @@ h2{
     margin-right: auto;
     margin-top: 50px;
 }
+@media (max-width: 800px){
+    .imageBanner img {
+        display: block;
+    }
+}
 
+@media (min-width: 992px){
+    .imageBanner img {
+        display: block;
+    }
+}

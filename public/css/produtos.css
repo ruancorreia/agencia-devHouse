@@ -1,0 +1,115 @@
+*{
+    padding: 0px;
+    margin: 5px;
+}
+.textheader{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-top: 20px;
+    color: #455880;
+    font-size: 12px;
+}
+.logosup{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 200px;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.drawkitlogo{
+    display: flex;
+    flex-wrap: wrap;
+    width: 85px;
+    height: 25px;
+}
+.cinemaxlogo{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80px;
+    height:auto;
+}
+.disneylogo{
+    display: flex;
+    flex-wrap: wrap;
+    width: 65px;
+    height: 30px;
+}
+.logoDown{
+    width: 815px;
+    display: flex;
+    justify-content: flex-end;
+}
+.quadSuperior{
+    width: 50px;
+    height: 45px;
+    background-color: #B5F2E3
+    ;
+    border-radius: 5px;
+}
+.logoDown1{
+    width: 815px;
+    display: flex;
+    justify-content: flex-end;
+}
+.quadSuperior1{
+    width: 50px;
+    height: 45px;
+    margin: -110px;
+    margin-top: 65px;
+    background-color: #FACFCA;
+    border-radius: 5px;
+}
+.textpri{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: "Arial";
+    color: #1E266D;
+    margin-top: 70px;
+    position: relative;
+}
+.textPage{
+    display: flex;
+    gap: 90px;
+    flex-wrap: wrap;
+    justify-content: stretch;
+    /*margin-top: 250px;
+    margin-left: 225px;*/
+}
+.div1{
+    gap: 30px;
+    height: 134px;
+    width: 300px;
+}
+h3{
+    font-size: 20px;
+    font-family: "Roboto";
+    color: #1E266D;
+    font-weight: bold;
+}
+p{
+    font-size: 16px;
+    font-family: "Roboto";
+}
+.squareMain{
+    width: 110px;
+    height: 45px;
+    background-color: #F8AEC3;
+    border-radius: 7px;
+    margin-left: 70px;
+    margin-bottom: 650px;
+}
+
+.centralPage{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: flex-end;
+}
+@media (max-width: 300px){
+    banner-2{
+        display: none;
+    }
+}

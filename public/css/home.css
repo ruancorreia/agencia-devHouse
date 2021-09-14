@@ -34,16 +34,21 @@ body{
 .menu a:hover{
     color: #ff0000;
 }
-.atendimento {
-    background-color: #3751ff;
-    font-size: 18px;
-    width: 135px;
-    font-weight: bold;
+.contact{
+    list-style: none;
+}
+.buttonAtendimento{
     border-radius: 10px;
     border-style: none;
-    color: #fff;   
+    background-color: #3751ff;
+    font-weight: bold;
+    color: #fff;
     padding: 5px;
-    cursor: pointer;
+    width: 100px;
+    box-shadow: none;
+}
+.buttonAtendimento:hover{
+    background-color: seagreen;
 }
 .titulodapagina{
     color:#1E266D;
@@ -67,9 +72,7 @@ h2{
     margin-top: 30px;
     gap: 40px;
     border-radius:10px ;
-
 }
-
 .buttonBuy{
     border-radius: 10px;
     border-style: none;

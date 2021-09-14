@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 5px;
+}
+
+.header{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 80px;
+    background: rgb(182, 208, 241);
+    align-items: center;
+}
+body{
+    font-family: "Roboto";
+    background-color: #F2F9FF;
+    
+}
+.menu{
+    list-style: none;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 20px;
+    font-weight: bold;
+    font-family: "Roboto";
+}
+
+.menu a{
+    color: rgb(61, 61, 216);
+    margin-left: 50px;
+    text-decoration: none;
+    font-size: 18px;
+}
+.menu a:hover{
+    color: #ff0000;
+}
+.contact{
+    list-style: none;
+}
+.buttonAtendimento{
+    border-radius: 10px;
+    border-style: none;
+    background-color: #3751ff;
+    font-weight: bold;
+    color: #fff;
+    padding: 5px;
+    width: 100px;
+    box-shadow: none;
+}
+.buttonAtendimento:hover{
+    background-color: seagreen;
+}

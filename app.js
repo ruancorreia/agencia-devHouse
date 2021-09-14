@@ -1,6 +1,8 @@
 //importaçoes dos modulos
 const express = require('express');
 const app = express();
+const rotasDeProdutos = require("./routes/produtos")
+const rotas = require("./routes");
 
 //rotas
 app.use(express.static('public'));
@@ -30,6 +32,9 @@ app.get('/depoimento', (req, res)=>{
     res.sendFile(__dirname + "/views/depoimento.html")
 });
 
+app.get('/contato', (req, res)=>{
+    res.sendFile(__dirname + "/views/contato.html")
+});
 
 
 app.listen(3000, ()=> console.log("Servidor iniciado!"));

@@ -64,12 +64,12 @@
     background-color: green;
 }
 .button-padrao-reset{
-    background-color: #3751ff;
+    background-color: red;
     color: white;
     border-radius: 4px;
     padding: 20px;
     border-style: none;
 }
 .button-padrao-reset:hover{
-    background-color: red;
+    background-color: rgb(240, 0, 0);
 }

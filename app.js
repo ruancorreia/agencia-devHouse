@@ -20,8 +20,8 @@ app.get('/manutencao', (req, res)=>{
     res.sendFile(__dirname + "/views/manutencao.html")
 });
 
-app.get('/produtos', (req, res)=>{
-    res.sendFile(__dirname + "/views/produtos.html")
+app.get('/about', (req, res)=>{
+    res.sendFile(__dirname + "/views/about.html")
 });
 
 app.get('/blog', (req, res)=>{

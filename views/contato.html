@@ -35,15 +35,15 @@
                 <h1>Contato</h1>
                 <p>Lorem ipsum dolor sit amet <br>consectetur adipisicing elit. Illo voluptate architecto quod minima eaque fugiat</p>
             </div>
-            <form class="formulario">
+            <form class="formulario" action="/receber-contato" method="POST" >
                 <div class="fullname">
-                    <input class="input-padrao" type="text" name="firstName" placeholder="input your name">
-                    <input class="input-padrao" type="text" nome="lastName" placeholder="input your lastname">
+                    <input class="input-padrao" type="text" name="nome" placeholder="input your name">
+                    <input class="input-padrao" type="text" name="sobrenome" placeholder="input your lastname">
                 </div>
                     
-                    <input class="input-padrao" type="tel" name="telephone" placeholder="Digite seu telefone">
+                    <input class="input-padrao" type="tel" name="telefone" placeholder="Digite seu telefone">
                 
-                    <select class="input-padrao" name="service" class="services">
+                    <select class="input-padrao" name="servico" class="services">
                     <option selected disabled>Select any option</option>
                     <option value="site">Site</option>
                     <option value="sistema">Sistema</option>

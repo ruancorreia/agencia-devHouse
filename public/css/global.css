@@ -51,7 +51,29 @@ header {
   border-radius: 40px;
   cursor: pointer;
 }
+/*.btn-fale-conosco{
+  width: 12%;
+  height: 10%;
+  position: fixed;
+  bottom: 40px;
+  right: 50px;
+}
+*/
 
+.btn-contato{
+  background-color: #3751ff;
+  border-style: none;
+  padding: 10px;
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  position: fixed;
+  right: 40px;
+  bottom: 50px;
+}
+.btn-contato:hover{
+  background-color: green;
+}
 #menu-mobile {
   display: none;
 }

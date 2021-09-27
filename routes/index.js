@@ -4,11 +4,15 @@ const path = require("path");
 
 
 routes.get("/", (req, res) =>{
-    res.sendFile(path.resolve('views', 'index.html'))
+    res.sendFile(path.resolve('views', 'home.html'))
 })
 
 routes.get("/home", (req, res) =>{
-    res.sendFile(path.resolve('views', 'index.html'))
+    res.sendFile(path.resolve('views', 'home.html'))
+})
+
+routes.get("/about", (req, res) =>{
+    res.sendFile(path.resolve('views', 'about.html'))
 })
 
 routes.get("/blog", (req, res) =>{
@@ -32,3 +36,5 @@ routes.get("/produtos", (req, res) =>{
 })
 
 
+
+module.exports = routes;

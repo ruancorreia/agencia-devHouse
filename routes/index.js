@@ -3,38 +3,43 @@ const routes = express.Router();
 const path = require("path");
 
 
+
 routes.get("/", (req, res) =>{
-    res.sendFile(path.resolve('views', 'home.html'))
-})
+    res.render("home", {titulo: 'Sua empresa vai ser incrivel!'});
+});
 
 routes.get("/home", (req, res) =>{
-    res.sendFile(path.resolve('views', 'home.html'))
-})
+    res.redirect("/")
+});
 
 routes.get("/about", (req, res) =>{
-    res.sendFile(path.resolve('views', 'about.html'))
+    res.render("about")
 })
 
 routes.get("/blog", (req, res) =>{
-    res.sendFile(path.resolve('views', 'blog.html'))
+    res.render("blog")
 })
 
 routes.get("/contato", (req, res) =>{
-    res.sendFile(path.resolve('views', 'contato.html'))
+    res.render("contato")
 })
 
 routes.get("/depoimento", (req, res) =>{
-    res.sendFile(path.resolve('views', 'depoimento.html'))
+    res.render("depoimentos")
 })
 
 routes.get("/manutencao", (req, res) =>{
-    res.sendFile(path.resolve('views', 'manutencao.html'))
+    res.render("manutencao")
 })
 
 routes.get("/produtos", (req, res) =>{
-    res.sendFile(path.resolve('views', 'produtos.html'))
+    res.render("produtos")
 })
 
+routes.post('/receber-contato', (req, res)=>{
+    console.log(req.body);
+    res.send("Olá " + req.body.nome + " recebemos a sua mensagem e entraremos em contato em breve!" )
+})
 
 
 module.exports = routes;

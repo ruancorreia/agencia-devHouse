@@ -1,7 +1,7 @@
 const express = require("express");
 const routes = express.Router();
 const path = require("path");
-
+const depoimentos = require("../models/depoimentos")
 
 
 routes.get("/", (req, res) =>{
@@ -24,10 +24,6 @@ routes.get("/contato", (req, res) =>{
     res.render("contato")
 })
 
-routes.get("/depoimento", (req, res) =>{
-    res.render("depoimentos")
-})
-
 routes.get("/manutencao", (req, res) =>{
     res.render("manutencao")
 })
@@ -41,5 +37,8 @@ routes.post('/receber-contato', (req, res)=>{
     res.send("Olá " + req.body.nome + " recebemos a sua mensagem e entraremos em contato em breve!" )
 })
 
+routes.get('/depoimentos', (req, res)=>{
+    res.render("depoimentos", { depoimentos, titulo: "Depoimentos" })
+});
 
 module.exports = routes;

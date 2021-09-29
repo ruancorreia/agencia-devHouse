@@ -28,4 +28,4 @@ function cadastrarDepoimento(autor, titulo, descricao) {
     descricao,
   });
 }
-module.exports = { depoimentos, cadastrarDepoimento };
+module.exports = depoimentos;

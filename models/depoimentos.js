@@ -1,21 +1,21 @@
 const depoimentos = [
   {
-    autor: "Vinny",
+    autor: "Ruan",
     titulo: "Depoimento Fake",
-    descricao: "jsbfjs sjfshjfb jhgcuyhsvb",
+    descricao: "teste teste teste ",
   },
   {
-    autor: "Mario",
+    autor: "Juvescleide",
     titulo: "Depoimento Fake II",
-    descricao: "jsbfjs sjfshjfb jhgcuyhsvb",
+    descricao: "asdnjasndjnas sndioasndonasodna sndansdnabsdga",
   },
   {
-    autor: "Hendy",
+    autor: "Saturnino",
     titulo: "Depoimento Fake III",
     descricao: "jsbfjs sjfshjfb jhgcuyhsvb",
   },
   {
-    autor: "Leandro",
+    autor: "john doe",
     titulo: "Depoimento Fake VI",
     descricao: "jsbfjs sjfshjfb jhgcuyhsvb",
   },
@@ -28,4 +28,4 @@ function cadastrarDepoimento(autor, titulo, descricao) {
     descricao,
   });
 }
-module.exports = depoimentos;
+module.exports = { depoimentos, cadastrarDepoimento };

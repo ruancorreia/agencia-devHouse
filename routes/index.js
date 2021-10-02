@@ -1,28 +1,32 @@
+//Importação de rotas
+const { Router } = require("express");
 const express = require("express");
 const routes = express.Router();
-const path = require("path");
 const indexController = require("../controllers");
 
 
+routes.get("/", indexController.exibirHome);
 
-routes.get("/", indexController.home);
+routes.get("/home", indexController.redirectHome);
 
-routes.get("/home", indexController.home);
-
-routes.get("/about",indexController.about);
+routes.get("/manutencao", indexController.exibirManutencao);
 
 routes.get("/blog", indexController.blog);
 
-routes.get("/contato", indexController.contato);
+routes.get("/about", indexController.about);
 
-routes.get("/manutencao", indexController.manutencao);
+routes.get("/contato", (req, res) => {
+  res.sendFile(path.resolve("views", "contato.html"));
+});
+
+routes.post("/receber-contato", (req, res) => {
+  res.send("Contato recebido por:" + req.body.nome);
+});
 
 routes.get("/depoimentos", indexController.exibirDepoimentos);
 
-routes.post('/receber-contato', indexController.contatoRecebido)
+routes.get("/cadastrar-depoimento", indexController.exibirFormDepoimento);
 
-routes.get("/produtos", (req, res) =>{
-    res.render("produtos")
-})
+routes.post("/cadastrar-depoimento", indexController.cadastrarDepoimento);
 
 module.exports = routes;

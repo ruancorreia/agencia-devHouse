@@ -1,31 +1,50 @@
-const depoimentos = require("../models/depoimentos");
+const modelDepoimentos = require("../models/depoimentos");
+const path = require("path");
 
 const indexController = {
-  home: (req, res) =>{
-    res.render("home", {titulo: 'Sua empresa vai ser incrivel!'});},
+  exibirHome: (req, res) => {
+    const usuario = undefined;
+    res.render("home", { titulo: "Sua empresa vai ser incrivel!", usuario });
+  },
 
-  about: (req, res) =>{
-      res.render("about")},
+  redirectHome: (req, res) => {
+    res.redirect("/");
+  },
 
-  blog: (req, res) =>{
-    res.render("blog")},
+  exibirManutencao: (req, res) => {
+    res.render("manutencao");
+  },
+  
+  about: (req, res) => {
+    res.render("about");
+  },
+  
+  blog: (req, res) => {
+    res.render("blog");
+  },
 
-  contato: (req, res) =>{
-    res.render("contato")},
+  exibirDepoimentos: (req, res) => {
+    res.render("depoimentos", {
+      depoimentos: modelDepoimentos.depoimentos,
+      titulo: "Depoimentos",
+    });
+  },
 
-  contatoRecebido: (req, res)=>{
+  exibirFormDepoimento: (req, res) => {
+    res.render("cadastroDepoimento");
+  },
+
+  cadastrarDepoimento: (req, res) => {
     console.log(req.body);
-    res.send("Olá " + req.body.nome + " recebemos a sua mensagem e entraremos em contato em breve!" )
-},
+    const { autor, titulo, descricao } = req.body;
 
-  manutencao: (req, res) =>{
-    res.render("manutencao")},
+    modelDepoimentos.cadastrarDepoimento(autor, titulo, descricao);
+    return res.redirect("/depoimentos");
+  },
 
-  exibirDepoimentos: (req, res)=>{
-    res.render("depoimentos", { depoimentos, titulo: "Depoimentos" })
-},
-
+  cadastrarProdutoForm: (req, res) => {
+    res.render("cadastrar-produto");
+  },
 };
-
 
 module.exports = indexController;

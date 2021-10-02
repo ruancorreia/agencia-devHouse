@@ -2,6 +2,7 @@
 const express = require('express');
 const path = require('path')
 const rotas = require("./routes/index");
+const rotaDeProdutos = require("./routes/produtos");
 
 const app = express();
 
@@ -12,8 +13,10 @@ app.set('views', path.resolve('views')); // informa a pasta onde os arquivos est
 //rotas
 app.use(express.json());
 app.use(express.urlencoded({ extended: false}));
-app.use(express.static('public'));
+app.use(express.static('public')); 
+
 app.use(rotas);
+app.use(rotaDeProdutos);
 
 //configurando o servidor
 app.listen(3000, ()=> console.log("Servidor iniciado!"));

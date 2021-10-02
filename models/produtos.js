@@ -1,5 +1,5 @@
-const {uuid} = require ('uuidv4');
-const listaDeProdutos = [
+const { uuid } = require ('uuidv4');
+let listaDeProdutos = [
     {
         id: "id",
         nome: "Site",
@@ -23,11 +23,14 @@ function cadastrarProduto(nome, descricao, imagem){
 }
 
 
-function deletaProduto(id){
+function excluirProduto(id){
     const novaListaDeProdutos = listaDeProdutos.filter(
-        (produtos) => produtos.id != id);
-    listaDeProdutos = novaListaDeProdutos;
-}
-/*d
+        (produto) => produto.id != id);
+        if (novaListaDeProdutos.length == listaDeProdutos.length) return false;
 
-module.exports = { produtos, cadastrarProduto };
+    listaDeProdutos = novaListaDeProdutos;
+    return true;
+}
+
+
+module.exports = { listaDeProdutos, cadastrarProduto }; 
